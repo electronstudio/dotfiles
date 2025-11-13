@@ -4,4 +4,6 @@ echo "deb https://debian.griffo.io/apt $(lsb_release -sc 2>/dev/null) main" | su
 
 sudo apt update
 
-sudo apt install eza bat ripgrep btop fish tealdeer micro hx zoxide fzf nnn ncdu fd-find lf ghostty uv duf
+sudo apt install eza bat ripgrep \
+	btop fish tealdeer micro hx zoxide fzf nnn ncdu fd-find lf ghostty uv duf \
+	starship
