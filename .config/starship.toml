@@ -95,10 +95,13 @@ format = "[$symbol$number]($style) "
 style = "white"
 symbol = "[▶](blue italic)"
 
+[hostname]
+format = "[$hostname](bold green) "
+
 [localip]
 ssh_only = true
 format = " ◯[$localipv4](bold magenta)"
-disabled = false
+disabled = true
 
 [time]
 disabled = true
