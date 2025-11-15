@@ -4,3 +4,4 @@ gext install clipboard-history@alexsaveau.dev
 gext install dash-to-dock@micxgx.gmail.com
 gext install paperwm@paperwm.github.com
 gext install freon@UshakovVasilii_Github.yahoo.com
+gext install appindicatorsupport@rgcjonas.gmail.com
