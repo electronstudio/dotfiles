@@ -1,4 +1,5 @@
 {
     "colorscheme": "dracula-tc",
-    "keymenu": true
+    "keymenu": false,
+	"statusformatl": "$(filename) $(modified)($(line),$(col)) | ft:$(opt:filetype) | µlsp:$(mlsp.status)"
 }

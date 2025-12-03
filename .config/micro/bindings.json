@@ -30,7 +30,7 @@
     "CtrlE": "EndOfLine",
     "CtrlG": "ToggleHelp",
     "CtrlH": "Backspace",
-    "CtrlJ": "Autocomplete",
+    "CtrlSpace": "Autocomplete",
     "CtrlK": "CutLine",
     "CtrlLeft": "WordLeft",
     "CtrlN": "CursorDown",
