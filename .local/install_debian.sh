@@ -1,9 +1,15 @@
 curl -sS https://debian.griffo.io/EA0F721D231FDD3A0A17B9AC7808B4DD62C41256.asc | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/debian.griffo.io.gpg
 
-echo "deb https://debian.griffo.io/apt/apt $(lsb_release -sc 2>/dev/null) main" | sudo tee /etc/apt/sources.list.d/debian.griffo.io.list
+echo "deb https://debian.griffo.io/apt $(lsb_release -sc 2>/dev/null) main" | sudo tee /etc/apt/sources.list.d/debian.griffo.io.list
+
+sudo dpkg --add-architecture i386
 
 sudo apt update
 
 sudo apt install eza bat ripgrep \
 	btop fish tealdeer micro hx zoxide fzf nnn ncdu fd-find lf ghostty uv duf \
-	starship gh
+	starship \
+	gh steam-installer flatpak
+
+chsh -s /usr/bin/fish 
+echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
