@@ -9,10 +9,10 @@ sudo apt update
 sudo apt install eza bat ripgrep \
 	btop fish tealdeer micro hx zoxide fzf nnn ncdu fd-find lf ghostty uv duf \
 	starship \
-	gh steam-installer flatpak
+	gh steam-installer flatpak earlyoom
 
 chsh -s /usr/bin/fish 
 echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
 
 sudo apt remove unattended-upgrades
-￼
+sudo cp .local/earlyoom.conf /etc/default/earlyoom￼
