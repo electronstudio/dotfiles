@@ -59,4 +59,3 @@ keybind = ctrl+q=copy_to_clipboard
 copy-on-select=true
 selection-clear-on-copy=true
 gtk-titlebar-style=tabs
-
