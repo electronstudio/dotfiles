@@ -16,3 +16,5 @@ echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
 
 sudo apt remove unattended-upgrades
 sudo cp .local/earlyoom.conf /etc/default/earlyoom￼
+sudo systemctl enable earlyoom
+sudo systemctl start earlyoom
