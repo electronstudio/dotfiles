@@ -18,3 +18,8 @@ sudo apt remove unattended-upgrades
 sudo cp .local/earlyoom.conf /etc/default/earlyoom￼
 sudo systemctl enable earlyoom
 sudo systemctl start earlyoom
+
+sudo systemctl stop packagekit.service
+sudo systemctl mask packagekit.service
+sudo systemctl disable apt-daily.timer
+sudo systemctl disable apt-daily-upgrade.timer

@@ -58,4 +58,4 @@ keybind = unconsumed:page_down=jump_to_prompt:1
 keybind = ctrl+q=copy_to_clipboard
 copy-on-select=true
 selection-clear-on-copy=true
-gtk-titlebar-style=tabs
+#gtk-titlebar-style=tabs
