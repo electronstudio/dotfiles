@@ -4,12 +4,22 @@
     "bash": {
       "git commit *": "ask",
       "git push *": "ask",
-      "sudo *": "ask"
+      "sudo *": "ask",
+      "git pull*": "ask",
+      "git merge*": "ask",
+      "git rebase*": "ask",
+      "git reset*": "ask",
+      "git checkout*": "ask",
+      "git status": "allow",
+      "git log": "allow",
+      "git diff": "allow",
+      "git branch": "allow"
     }
   },
   "provider": {
     "synthetic": {
       "models": {
+      	"hf:moonshotai/Kimi-K2.7-Code": {},
         "hf:zai-org/GLM-5.2": {
           "variants": {
           	"none": {
@@ -25,5 +35,14 @@
         }
       }
     }
+  },
+  "small_model": "synthetic/hf:zai-org/GLM-4.7-Flash",
+  "command": {
+      "commit": {
+      "description": "Review staged changes, create commit message, ask for confirmation before committing",
+      "agent": "build",
+      "template": "Git stage any files you have changed.  Review the staged changes (including ones staged by others) and create a suitable commit message. Follow these steps:\n\n1. First, examine the git status to see what's staged:\n!`git status`\n\n2. Review the staged changes in detail:\n!`git diff --staged`\n\n3. If necessary, examine specific changed files to understand the changes better. Use read tools for key files.\n\n4. Look at recent commit history for context:\n!`git log --oneline -5`\n\n5. Analyze the changes and create a **concise**, descriptive commit message that follows conventional commit format if appropriate. Focus on the 'why' rather than just the 'what'.\n\n7. Do git commit.\n\n8. Do git push.",
+	  "model":  "synthetic/hf:zai-org/GLM-4.7-Flash"
+      }
   }
 }
